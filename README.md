@@ -7,6 +7,10 @@
 An AI-powered mental health support system that uses advanced Natural Language Processing to detect emotions, analyze sentiment, and provide personalized coping strategies.
 
 
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/eca41e15-f785-4ea2-b052-631d1036495c" />
+
+
+
 ## 🎯 Problem Statement
 
 Mental health issues affect millions globally, but accessing immediate support remains challenging. MindfulAI bridges this gap by providing:
@@ -73,6 +77,7 @@ Special thanks to the open‑source community and frameworks that made this proj
 ### 💡 Final Note
 MINDFUL‑AI is built to demonstrate how **ethical, explainable AI** can be both technically rigorous and visually polished.  
 If you find this project useful or inspiring, please ⭐ the repo and share your feedback!
+
 
 
 
