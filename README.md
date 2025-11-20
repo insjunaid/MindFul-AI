@@ -5,13 +5,7 @@
 ![Flask](https://img.shields.io/badge/flask-3.0.0-red.svg)
 
 An AI-powered mental health support system that uses advanced Natural Language Processing to detect emotions, analyze sentiment, and provide personalized coping strategies.
-<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/eca41e15-f785-4ea2-b052-631d1036495c" />
 
-<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/7b695982-a58c-4139-bac8-d71872c4117a" />
-
-<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/08709580-d8ee-4f0e-a02f-1c2521779576" />
-
-<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/27a3606d-0d01-46ed-9048-37a85fb7f7b4" />
 
 ## 🎯 Problem Statement
 
@@ -79,5 +73,6 @@ Special thanks to the open‑source community and frameworks that made this proj
 ### 💡 Final Note
 MINDFUL‑AI is built to demonstrate how **ethical, explainable AI** can be both technically rigorous and visually polished.  
 If you find this project useful or inspiring, please ⭐ the repo and share your feedback!
+
 
 
