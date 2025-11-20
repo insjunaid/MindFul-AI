@@ -53,4 +53,25 @@ Mental health issues affect millions globally, but accessing immediate support r
 - **Font Awesome**: Icons
 - **Google Fonts**: Poppins typeface
 
-## 📁 Project Structure
+## 🚀 Future Improvements
+- Expand NLP engine with advanced explainability features
+- Add offline‑ready deployment for seamless demos
+- Enhance UI/UX for clinical clarity and recruiter impact
+
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome!  
+Feel free to check the [issues page](../../issues) to see what’s next.
+
+## 📜 License
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+---
+
+### 🌟 Acknowledgements
+Special thanks to the open‑source community and frameworks that made this project possible.
+
+---
+
+### 💡 Final Note
+MINDFUL‑AI is built to demonstrate how **ethical, explainable AI** can be both technically rigorous and visually polished.  
+If you find this project useful or inspiring, please ⭐ the repo and share your feedback!
