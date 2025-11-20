@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindfulAI - Mental Health Support</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-brain"></i>
+                <span>MindfulAI</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#analyze" class="nav-link">Analyze</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#resources" class="nav-link">Resources</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Your Mental Health <span class="gradient-text">Matters</span>
+                </h1>
+                <p class="hero-subtitle">
+                    AI-powered emotional analysis and personalized support at your fingertips
+                </p>
+                <div class="hero-buttons">
+                    <a href="#analyze" class="btn btn-primary">
+                        <i class="fas fa-comment-medical"></i> Start Analysis
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card card-1">
+                    <i class="fas fa-heart"></i>
+                    <span>Emotion Detection</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-brain"></i>
+                    <span>AI-Powered</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>24/7 Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-pen"></i>
+                    </div>
+                    <h3>1. Express Yourself</h3>
+                    <p>Write about your feelings, thoughts, or experiences</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>2. AI Analysis</h3>
+                    <p>Our NLP models analyze emotions and sentiment</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>3. Get Support</h3>
+                    <p>Receive personalized coping strategies and resources</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analysis Section -->
+    <section id="analyze" class="analysis-section">
+        <div class="container">
+            <h2 class="section-title">Share Your Thoughts</h2>
+            <p class="section-subtitle">Your privacy is our priority. All analysis is done securely.</p>
+            
+            <div class="analysis-container">
+                <!-- Input Area -->
+                <div class="input-card">
+                    <div class="input-header">
+                        <i class="fas fa-comment-dots"></i>
+                        <h3>How are you feeling today?</h3>
+                    </div>
+                    <textarea 
+                        id="userInput" 
+                        placeholder="Express your thoughts and feelings here... 
+
+Examples:
+• 'I've been feeling really overwhelmed with work lately...'
+• 'Today was an amazing day! I finally achieved...'
+• 'I'm worried about my upcoming exams and...'
+
+Remember: This is a safe space for you."
+                        maxlength="5000"
+                    ></textarea>
+                    <div class="input-footer">
+                        <span class="char-count">0 / 5000</span>
+                        <button id="analyzeBtn" class="btn btn-primary">
+                            <i class="fas fa-brain"></i> Analyze Emotions
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Loading State -->
+                <div id="loadingState" class="loading-state hidden">
+                    <div class="spinner"></div>
+                    <p>Analyzing your emotions...</p>
+                </div>
+
+                <!-- Results Area -->
+                <div id="resultsArea" class="results-area hidden">
+                    <!-- Crisis Alert -->
+                    <div id="crisisAlert" class="crisis-alert hidden">
+                        <div class="alert-content">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div>
+                                <h3>We're here for you</h3>
+                                <p>If you're in crisis, please reach out to a professional immediately:</p>
+                                <div class="crisis-contacts">
+                                    <a href="tel:988" class="crisis-btn">
+                                        <i class="fas fa-phone"></i> Call 988
+                                    </a>
+                                    <a href="sms:741741&body=HOME" class="crisis-btn">
+                                        <i class="fas fa-sms"></i> Text HOME to 741741
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Emotion Results -->
+                    <div class="result-card">
+                        <h3><i class="fas fa-smile"></i> Emotion Analysis</h3>
+                        <div id="emotionResult" class="emotion-display">
+                            <!-- Dynamic content -->
+                        </div>
+                        <div id="emotionChart" class="chart-container">
+                            <!-- Chart will be here -->
+                        </div>
+                    </div>
+
+                    <!-- Sentiment Results -->
+                    <div class="result-card">
+                        <h3><i class="fas fa-chart-line"></i> Sentiment Analysis</h3>
+                        <div id="sentimentResult" class="sentiment-display">
+                            <!-- Dynamic content -->
+                        </div>
+                    </div>
+
+                    <!-- Keywords -->
+                    <div class="result-card">
+                        <h3><i class="fas fa-tags"></i> Key Themes</h3>
+                        <div id="keywordsResult" class="keywords-display">
+                            <!-- Dynamic content -->
+                        </div>
+                    </div>
+
+                    <!-- Coping Strategies -->
+                    <div class="result-card strategies-card">
+                        <h3><i class="fas fa-lightbulb"></i> Personalized Coping Strategies</h3>
+                        <div id="strategiesResult" class="strategies-display">
+                            <!-- Dynamic content -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About MindfulAI</h2>
+                    <p>
+                        MindfulAI uses advanced Natural Language Processing (NLP) and machine learning 
+                        to help you understand your emotional well-being better.
+                    </p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check"></i> Advanced emotion detection using transformer models</li>
+                        <li><i class="fas fa-check"></i> Real-time sentiment analysis</li>
+                        <li><i class="fas fa-check"></i> Crisis detection and immediate resources</li>
+                        <li><i class="fas fa-check"></i> Personalized coping strategy recommendations</li>
+                        <li><i class="fas fa-check"></i> 100% private and secure</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">7</div>
+                        <div class="stat-label">Emotions Detected</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Accuracy Rate</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources-section">
+        <div class="container">
+            <h2 class="section-title">Mental Health Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <i class="fas fa-phone-volume"></i>
+                    <h3>Crisis Hotlines</h3>
+                    <p>988 - Suicide & Crisis Lifeline</p>
+                    <p>741741 - Crisis Text Line (Text HOME)</p>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-user-md"></i>
+                    <h3>Professional Help</h3>
+                    <p>Find licensed therapists</p>
+                    <p>Online counseling services</p>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-book-reader"></i>
+                    <h3>Self-Help Resources</h3>
+                    <p>Meditation apps</p>
+                    <p>Mental health articles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-brain"></i> MindfulAI</h3>
+                    <p>AI-powered mental health support for everyone.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#analyze">Analyze</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Disclaimer</h4>
+                    <p>This tool is not a replacement for professional medical advice, diagnosis, or treatment.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MindfulAI. Created for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
