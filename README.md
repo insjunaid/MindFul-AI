@@ -7,9 +7,9 @@
 An AI-powered mental health support system that uses advanced Natural Language Processing to detect emotions, analyze sentiment, and provide personalized coping strategies.
 
 
-<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/eca41e15-f785-4ea2-b052-631d1036495c" />
+<img width="550" height="330" alt="Image" src="https://github.com/user-attachments/assets/eca41e15-f785-4ea2-b052-631d1036495c" />
 
-<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/7b695982-a58c-4139-bac8-d71872c4117a" />
+<img width="550" height="330" alt="Image" src="https://github.com/user-attachments/assets/7b695982-a58c-4139-bac8-d71872c4117a" />
 
 ## 🎯 Problem Statement
 
